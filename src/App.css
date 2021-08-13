@@ -31,3 +31,7 @@
 .myBtn:active {
   transform: scale(0.98);
 }
+
+.active {
+  background-color: #7e57c2 !important;
+}

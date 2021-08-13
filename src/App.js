@@ -1,19 +1,48 @@
 import './App.css';
 import Navbar from './components/layout/Navbar';
 import Users from './components/users/Users'
-import User from './components/users/User'
-import Home from './components/layout/Home'
+import Search from './components/users/Search'
+import axios from 'axios'
+import React, { useState, useEffect } from 'react'
+import Pagination from './components/users/Pagination';
 
-function App() {
+const App = () => {
+  const [users, setUsers] = useState([])
+  const [totalResults, setTotalResults] = useState(null)
+  const [currentPage, setCurrentPage] = useState(1)
+  const [usersPerPage, setUsersPerPage] = useState(10)
+
+  useEffect(() => {
+
+  })
+  // Search users
+  const searchUsers = async text => {
+    const res = await axios.get(`https://api.github.com/search/users?q=${text}`)
+
+    setUsers(res.data.items)
+    setTotalResults(res.data.total_count)
+  }
+
+  // Get first page of users
+  const indexOfLastUser = currentPage * usersPerPage
+  const indexOfFirstUser = indexOfLastUser - usersPerPage
+  const currentUser = users.slice(indexOfFirstUser, indexOfLastUser)
+
   return (
-      <div className="App">
-        <Navbar />
-        <div className="">
-          <User />
-        </div>
-        
+    <div className="App">
+      <Navbar />
+      <div className="container">
+          <Search 
+            searchUsers={searchUsers}/
+          >
+          
+          <Users users={currentUser} />
+          
+      </div>
+      <Pagination usersPerPage={usersPerPage} totalResults={totalResults}/>
     </div>
   );
 }
 
-export default App;
+export default App
+
