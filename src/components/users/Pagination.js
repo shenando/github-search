@@ -8,8 +8,6 @@ const Pagination = ({ usersPerPage, totalUsers, paginate }) =>{
     pages.push(i)
   }
 
-  
-
   return (
     <div className="center-align">
       {totalUsers > 0 && (
