@@ -1,11 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 const User = ({ user: { login, avatar_url, html_url, repos_url } }) => {
-  useEffect(() => {
-
-  })
-
     return (
       <div className="row center-align" style={{marginLeft: "10px", marginRight: "20px"}}>
         {/* MATERIALIZE CARD START: https://materializecss.com/cards.html*/}
