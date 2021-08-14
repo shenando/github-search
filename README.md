@@ -1,7 +1,7 @@
 # Github User Search
-A search app that utalizes both the github search api (https://api.github.com/search/users?q=example) and the github user api (https://api.github.com/users/example). Users can enter any search item and the form returns a list of results that match. Users can go through a list of cards that have information relating to each found github user and can go to each user's github by clicking on the profile button. 
+A search app that utalizes both the GitHub search API (https://api.github.com/search/users?q=example) and the GitHub user API (https://api.github.com/users/example). Users can enter any search item and the form returns a list of results that match. Users can go through a list of cards that have information relating to each found GitHub user and can go to each user's github by clicking on the profile button. 
 
-**NOTE: This app uses the basic GitHub api calls and will therefore time users out after a certain number of searches per hour. I did this to ensure that GitHub permissions would not be required to run the app **
+**NOTE: This app uses the basic GitHub API calls and will therefore time users out after a certain number of searches per hour. I did this to ensure that GitHub permissions would not be required to run the app **
 
 **Link to project:** https://shenan-github-search.netlify.app/
 
@@ -15,11 +15,11 @@ A React app, this SPA utalizes different components to present the final product
 
 ## Optimizations
 
-Though it is a small project and state management is realatively straight forwards, the app could be improved with the use of Redux. There are some bugs with the pagination as well which I think could be improved with time - I think this relates to how the data is interacting with the deployment environment - but luckily the next/prev buttons work great! Finally, I started to incorporate routes but ran out of time - so I removed them. I'd love to go back and make it so each time you click on a user it brings you to a new page with more info/links. 
+Though it is a small project and state management is realatively straight forward, the app could be improved with the use of Redux. There are some bugs with the pagination as well which I think could be improved with time - I think this relates to how the data is interacting with the deployment environment - but luckily the next/prev buttons work great! Finally, I started to incorporate routes but ran out of time - so I removed them. I'd love to go back and make it so each time you click on a user it brings you to a new page with more info/links. 
 
 ## Lessons Learned:
 
-Pagination is hard! Especially when your search results return thousands of results. Luckily the GitHub API limits the amount of search results to 30 (which I increased to 100 to give users a more robust experiencce) so I was able to make pagination work. But having breaks in pagination and making it more dynamic is something I defineitely want to contiune working on. Also, I think I complicated things for myself by making an initial search user call and an additional specific user information call, but because it allowed me to access more important information, I think it all worked out in the end. 
+Pagination is hard! Especially when your search returns thousands of results. Luckily the GitHub API limits the amount of search results to 30 (which I increased to 100 to give users a more robust experiencce) so I was able to make pagination work. But having breaks in pagination and making it more dynamic is something I defineitely want to contiune working on. Also, I think I complicated things for myself by making an initial search user call and an additional specific user information call, but because it allowed me to access more important information, I think it all worked out in the end. 
 
 
 ________________________________________
