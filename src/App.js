@@ -18,7 +18,6 @@ const App = () => {
 
     setUsers(res.data.items)
     setTotalResults(res.data.total_count)
-
     console.log(totalResults)
   }
 
@@ -30,23 +29,18 @@ const App = () => {
   // Click on to next page
   const paginate = (pages) => {
     setCurrentPage(pages)
-    console.log(pages)
   }
 
   return (
-    <div className="App">
-      <Navbar />
-      <div className="container">
-          <Search 
-            searchUsers={searchUsers}/
-          >
-          <Pagination usersPerPage={usersPerPage} totalUsers={users.length} paginate={paginate}/>
-          <Users users={currentUser} />
+      <div className='App'>
+        <Navbar />
+          <div className="container">
+            <Search searchUsers={searchUsers}/>
+            <Pagination usersPerPage={usersPerPage} totalUsers={users.length} paginate={paginate}/>
+            <Users users={currentUser} />
+          </div>
       </div>
-
-    </div>
   );
 }
 
 export default App
-

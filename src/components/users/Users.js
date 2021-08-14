@@ -2,10 +2,11 @@ import React from 'react'
 import User from './User'
 
 const Users = (props) => {
+  
   return (
     <div style={{display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gridGap: '0.5 rem'}}>
       {props.users.map(user => (
-        <User key={user.id} user={user} />
+        <User key={user.id} user={user}/>
       ))}
     </div>
   )
