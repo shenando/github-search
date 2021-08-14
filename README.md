@@ -15,7 +15,7 @@ A React app, this SPA utalizes different components to present the final product
 
 ## Optimizations
 
-Though it is a small project and state management is realatively straight forwards, the app could be improved with the use of Redux. If I had more time I would have also really liked to add the users repos into the information card, though that would have required a third data request. There are some bugs with the pagination as well which I think could be improved with time - I think this relates to how the data is interacting with the deployment environment - but luckily the next/prev buttons work great! Finally, I really wanted to use the react-paginate package, but I had difficulty implementing it due to my app's structure. 
+Though it is a small project and state management is realatively straight forwards, the app could be improved with the use of Redux. If I had more time I would have also really liked to add the users repos into the information card, though that would have required a third data request. There are some bugs with the pagination as well which I think could be improved with time - I think this relates to how the data is interacting with the deployment environment - but luckily the next/prev buttons work great! I really wanted to use the react-paginate package, but I had difficulty implementing it due to my app's structure. Finally, I started to incorporate routes but ran out of time - so I removed them. I'd love to go back and make it so each time you click on a user it brings you to a new page with more info/links. 
 
 ## Lessons Learned:
 
