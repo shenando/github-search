@@ -1,3 +1,27 @@
+# Github User Search
+A search app that utalizes both the github search api (https://api.github.com/search/users?q=example) and the github user api (https://api.github.com/users/example). Users can enter any search item and the form returns a list of results that match. Users can go through a list of cards that have information relating to each related github user and can go to each user's github by clicking on the profile button. 
+
+**Link to project:** https://shenan-github-search.netlify.app/
+
+![tictactoe gif](https://i.imgur.com/8GLeqBC.gif)
+
+## How It's Made:
+
+**Tech used:** React, Materalize CSS, Javascript/JSX, CSS, HTML
+
+A React app, this SPA utalizes different components to present the final product. 
+
+## Optimizations
+
+Though it is a small project and state management is realatively straight forwards, the app could be improved with the use of Redux. If I had more time I would have also really liked to add the users repos into the information card, though that would have required a third data request. There are some bugs with the pagination as well which I think could be improved with time - I think this relates to how the data is interacting with the deployment environment - but luckily the next/prev buttons work great! Finally, I really wanted to use the react-paginate package, but I had difficulty implementing it due to my app's structure. 
+
+## Lessons Learned:
+
+Pagination is hard! Especially when your search results return thousands of results. Luckily the GitHub API limits the amount of search results to 30 (which I increased to 100 to give users a more robust experiencce) so I was able to make pagination work. But having breaks in pagination and making it more dynamic is something I defineitely want to contiune working on. Also, I think I complicated things for myself by making an initial search user call and an additional specific user information call, but because it allowed me to access more important information, I think it all worked out in the end. 
+
+
+________________________________________
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
