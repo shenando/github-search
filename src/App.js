@@ -21,12 +21,12 @@ const App = () => {
     console.log(totalResults)
   }
 
-  // Get first page of users
+  // Get first page of users for pagination
   const indexOfLastUser = currentPage * usersPerPage
   const indexOfFirstUser = indexOfLastUser - usersPerPage
   const currentUser = users.slice(indexOfFirstUser, indexOfLastUser)
 
-  // Click on to next page
+  // Click on to next page for pagination
   const paginate = (pages) => {
     setCurrentPage(pages)
   }

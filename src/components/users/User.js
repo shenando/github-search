@@ -3,15 +3,16 @@ import UserPage from './UserPage'
 import PropTypes from 'prop-types'
 
 const User = ({ user }) => {
-
-    return (
-      <div className="row center-align" style={{marginLeft: "10px", marginRight: "20px"}}>
-        {/* MATERIALIZE CARD START: https://materializecss.com/cards.html*/}
-        <div className="col s12" >
+  /* Takes the data from Search req and creates the main card for each user */
+  return (
+    <div className="row center-align" style={{marginLeft: "10px", marginRight: "20px"}}>
+      {/* MATERIALIZE CARD START: https://materializecss.com/cards.html*/}
+      <div className="col s12" >
           <div className="card deep-purple lighten-1">
             <div className="card-content white-text">
               <img src={user.avatar_url} style={{width: '90px', borderRadius: '50%'}} alt={user.login} ></img>
               <span className="card-title">{user.login}</span>
+              {/* Insert user specific info, uses a different data req */}
               <UserPage user={user}/>
             </div>
             <div className="card-action">

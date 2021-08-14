@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 const Search = ({ searchUsers }) => {
   const [text, setText] = useState('')
 
+  /* When form is submitted, as long as text is not nothing, search user takes text and completes the searchUser call, then clears the search input */
   const onSubmit = e => {
     e.preventDefault()
     if(text === '') {
@@ -14,6 +15,7 @@ const Search = ({ searchUsers }) => {
     }
   }
 
+  /* Tracks the change in search input and sets it to the text state*/
   const onChange = (e) => setText(e.target.value)
 
   return (
