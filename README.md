@@ -1,15 +1,15 @@
 # Github User Search
-A search app that utalizes both the github search api (https://api.github.com/search/users?q=example) and the github user api (https://api.github.com/users/example). Users can enter any search item and the form returns a list of results that match. Users can go through a list of cards that have information relating to each related github user and can go to each user's github by clicking on the profile button. 
+A search app that utalizes both the github search api (https://api.github.com/search/users?q=example) and the github user api (https://api.github.com/users/example). Users can enter any search item and the form returns a list of results that match. Users can go through a list of cards that have information relating to each found github user and can go to each user's github by clicking on the profile button. 
 
 **Link to project:** https://shenan-github-search.netlify.app/
 
-![githubuser gif](https://i.imgur.com/8GLeqBC.gif)
+![github_user_search gif](https://i.imgur.com/8GLeqBC.gif)
 
 ## How It's Made:
 
-**Tech used:** React, Materalize CSS, Javascript/JSX, CSS, HTML
+**Tech used:** React, Javascript/JSX, Materalize CSS, CSS, HTML
 
-A React app, this SPA utalizes different components to present the final product. Some styled elements (nav bar, user card, pagination list) come from Materalize CSS components, though I had modified them for my own purposes. 
+A React app, this SPA utalizes different components to present the final product. Some styled elements (nav bar, user card, pagination list) come from Materalize CSS components, though I have modified them for my own purposes. 
 
 ## Optimizations
 
