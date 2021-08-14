@@ -3,13 +3,13 @@ A search app that utalizes both the github search api (https://api.github.com/se
 
 **Link to project:** https://shenan-github-search.netlify.app/
 
-![tictactoe gif](https://i.imgur.com/8GLeqBC.gif)
+![githubuser gif](https://i.imgur.com/8GLeqBC.gif)
 
 ## How It's Made:
 
 **Tech used:** React, Materalize CSS, Javascript/JSX, CSS, HTML
 
-A React app, this SPA utalizes different components to present the final product. 
+A React app, this SPA utalizes different components to present the final product. Some styled elements (nav bar, user card, pagination list) come from Materalize CSS components, though I had modified them for my own purposes. 
 
 ## Optimizations
 
