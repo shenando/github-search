@@ -1,6 +1,8 @@
 # Github User Search
 A search app that utalizes both the github search api (https://api.github.com/search/users?q=example) and the github user api (https://api.github.com/users/example). Users can enter any search item and the form returns a list of results that match. Users can go through a list of cards that have information relating to each found github user and can go to each user's github by clicking on the profile button. 
 
+**NOTE: This app uses the basic GitHub api calls and will therefore time users out after a certain number of searches per hour. I did this to ensure that GitHub permissions would not be required to run the app **
+
 **Link to project:** https://shenan-github-search.netlify.app/
 
 ![github_user_search gif](https://i.imgur.com/8GLeqBC.gif)
