@@ -5,7 +5,7 @@ A search app that utalizes both the github search api (https://api.github.com/se
 
 **Link to project:** https://shenan-github-search.netlify.app/
 
-![github_user_search gif](https://i.imgur.com/8GLeqBC.gif)
+![github_user_search gif](https://imgur.com/SRX1g7V)
 
 ## How It's Made:
 
